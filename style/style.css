@@ -1,0 +1,140 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #476A94 3.8%, #7E99B8 35.3%, #A8BDD6 70.59%, #C9DEF8 96.81%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.form input {
+    width:100%;
+    border: 2px solid #7E99B8;
+    background-color: #C9DEF8;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    border-radius: 0.625rem;
+}
+.name-and-number {
+    margin-top: 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.number {
+    width: 20%;
+    height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C9DEF8;
+    border: 2px solid #7E99B8;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.625rem;
+}
+.name {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C9DEF8;
+    border: 2px solid #7E99B8;
+    border-radius: 0.625rem;
+}
+.number span , .name span {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #141414;
+}
+.gifs {
+    margin-top: 1rem;
+    width: 30%;
+    height: 50vh;
+    background-image: url('/img/Rectangle 12.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 1.875rem;
+}
+.pokemonGif {
+    background-color: transparent;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 4rem;
+}
+.buttons {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.prev , .next {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    border: 2px solid #C9DEF8;
+    background-color: #A8BDD6;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #141414;
+    cursor: pointer;
+    
+}
+.prev:hover , .next:hover {
+    background-color: #476A94;
+}
+.copy {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    align-self: flex-end;
+}
+.copyMatheus {
+    font-family: sans-serif;
+}
+
+@media (min-width: 300px) and (max-width:900px) {
+    .gifs{
+        width: 60%;
+    }
+}
+@media (min-width: 200px) and (max-width:590px) {
+    .buttons {
+        width: 90%;
+    }
+    .gifs{
+        width: 100%;
+    }
+    .gifs{
+        width: 100%;
+    }
+    .name-and-number {
+        width: 90%;
+    }
+    .name {
+        width: 70%;
+    }
+    .formulario-name {
+        justify-self: flex-start;
+        margin-right: 20%;
+    }
+}
